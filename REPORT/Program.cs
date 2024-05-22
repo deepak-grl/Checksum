@@ -11,7 +11,7 @@ namespace DATA_INTEGRITY.REPORT
             string ReportFilePath = @".\..\..\..\Report\SampleReport.html";
 
             // Generate checksum for HTML file
-            GenerateHashcode.GenerateDigitalSignature(ReportFilePath, @".\..\..\..\Report\checksum_file.txt");
+            //GenerateHashcode.GenerateDigitalSignature(ReportFilePath, @".\..\..\..\Report\checksum_file.txt");
 
             // Verify integrity of the  file
             VerifyData.Verifyfile(ReportFilePath, @".\..\..\..\Report\checksum_file.txt");
